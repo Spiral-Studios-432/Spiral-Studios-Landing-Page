@@ -27,7 +27,7 @@ html {
 body {
     font-family: var(--font-body);
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.8;
     background-color: var(--white);
     text-align: center;
 }
@@ -46,6 +46,7 @@ h3 { font-size: 1.25rem; }
 p {
     max-width: 65ch;
     margin: 0 auto 1rem;
+    letter-spacing: 0.2px;
 }
 
 /* --- Layout --- */
