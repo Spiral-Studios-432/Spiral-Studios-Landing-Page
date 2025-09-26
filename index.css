@@ -161,3 +161,33 @@ section {
         grid-template-columns: 1fr;
     }
 }
+/* === Quantum Soundscape card === */
+.app-card {
+  margin: 2rem auto;
+  max-width: 860px;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
+}
+.app-card h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+.app-card p {
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+}
+.btn-primary {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #1b4ed8, #ad68ff); /* sapphire → lavender */
+  transition: transform 0.08s ease, opacity 0.2s ease;
+}
+.btn-primary:hover { transform: translateY(-1px); opacity: 0.95; }
+.btn-primary:active { transform: translateY(0); opacity: 0.88; }
