@@ -191,3 +191,21 @@ section {
 }
 .btn-primary:hover { transform: translateY(-1px); opacity: 0.95; }
 .btn-primary:active { transform: translateY(0); opacity: 0.88; }
+
+/* App tiles */
+.app-grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); }
+.app-card {
+  position:relative; padding:16px; border-radius:14px; background:#111; color:#fff;
+  border:1px solid #2a2a2a; text-decoration:none; transition:transform .15s ease;
+}
+.app-card:hover { transform:translateY(-2px); }
+.app-card h3 { margin:0 0 6px 0; font-size:18px; }
+
+/* Coming soon */
+.app-card.coming { opacity:.65; pointer-events:none; }
+.app-card.coming::after {
+  content:"Coming soon";
+  position:absolute; top:10px; right:10px;
+  font-size:12px; padding:4px 8px; border-radius:999px;
+  background:#f59e0b; color:#111; font-weight:700;
+}
